@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Snake
 {
@@ -15,10 +17,10 @@ namespace Snake
 
             p2.Draw();
 
-            list<int> numlist = new list<int>();
-            numlist.add(0);
-            numlist.add(1);
-            numlist.add(2);
+            List<int> numlist = new List<int>();
+            numlist.Add(0);
+            numlist.Add(1);
+            numlist.Add(2);
 
             int x = numlist[0];
             int y = numlist[1];
@@ -29,9 +31,9 @@ namespace Snake
                 Console.WriteLine(i);
             }
 
-            numlist.RemuveAt(0);
+            numlist.RemoveAt(0);
 
-            list<point> plist = new list<point>();
+            List<Point> plist = new List<Point>();
             plist.Add(p1);
             plist.Add(p2);
 
